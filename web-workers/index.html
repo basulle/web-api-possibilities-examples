@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web workers</title>
+  </head>
+  <body>
+    <h1>Web workers</h1>
+
+    <h3>Complex task in main thread (freezes the UI)</h3>
+    <button onclick="complexOperation()">Run complex operation</button>
+    <input placeholder="Try to write here something after running the complex operation"></input>
+
+    <h3>Complex task in separate thread (not blocking the UI)</h3>
+
+    <button onclick="webWorkerComplexTask()">Run complex operation</button>
+    <input placeholder="Try to write here something after running the complex operation"></input>
+    
+  </body>
+</html>
